@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body class="theme-one">
+  <div class="calc-wrapper">
+
+    <div class="header">
+      <div class="title">calc</div>
+
+      <div class="theme-wrapper">
+        <div class="theme-text">THEME</div>
+
+        <div class="selector-wrapper">
+          <form class="labels-wrapper">
+            <label for="one" tabindex="0">1</label>
+            <input type="radio" name="theme" id="one" value="0" checked>
+            <label for="two" tabindex="0">2</label>
+            <input type="radio" name="theme" id="two" value="1">
+            <label for="three" tabindex="0">3</label>
+            <input type="radio" name="theme" id="three" value="2">
+          </form>
+          <div class="toggle-wrapper" tabindex="0">
+            <div class="toggle" role="switch"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="screen"><span></span></div>
+
+    <div class="keypad">
+      <button type="button" class="btn num-btn" id="7"><span>7</span></button>
+      <button type="button" class="btn num-btn" id="8"><span>8</span></button>
+      <button type="button" class="btn num-btn" id="9"><span>9</span></button>
+      <button type="button" class="btn" id="del"><span>DEL</span></button>
+      <button type="button" class="btn num-btn" id="4"><span>4</span></button>
+      <button type="button" class="btn num-btn" id="5"><span>5</span></button>
+      <button type="button" class="btn num-btn" id="6"><span>6</span></button>
+      <button type="button" class="btn num-btn" id="+"><span>+</span></button>
+      <button type="button" class="btn num-btn" id="1"><span>1</span></button>
+      <button type="button" class="btn num-btn" id="2"><span>2</span></button>
+      <button type="button" class="btn num-btn" id="3"><span>3</span></button>
+      <button type="button" class="btn num-btn" id="-"><span>-</span></button>
+      <button type="button" class="btn num-btn" id="."><span>.</span></button>
+      <button type="button" class="btn num-btn" id="0"><span>0</span></button>
+      <button type="button" class="btn num-btn" id="/"><span>/</span></button>
+      <button type="button" class="btn num-btn" id="x"><span>x</span></button>
+      <button type="button" class="btn" id="reset"><span>RESET</span></button>
+      <button type="button" class="btn" id="equals"><span>=</span></button>
+    </div>
+
+  </div>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Simon Mckindley</a>.
+  </div> -->
+</body>
+
+</html>
