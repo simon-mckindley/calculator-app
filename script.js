@@ -163,6 +163,20 @@ function initParamList() {
     };
 }
 
+document.addEventListener("keyup", function (event) {
+    let key = event.key;
+    console.log(key);
+    if (key === "Backspace") {
+        deleteInput();
+    } else if (key === "Delete") {
+        reset();
+    } else if (key === "Enter" || key === "=") {
+        calculate();
+    } else {
+        if (key === "*") key = "x";
+        validateInput(key, false);
+    }
+})
 
 numBtns.forEach((button) => {
     button.addEventListener("click", function () {
